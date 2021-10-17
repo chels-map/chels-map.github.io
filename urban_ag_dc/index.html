@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset=utf-8 />
+    <title>Urban Agriculture in Washington, DC</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,900i" rel="stylesheet">
+
+    <style>
+       
+        body {
+            margin: 0;
+            padding: 0;
+            background: rgb(246, 248, 246);
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            color: #3d3d3d;
+            font-size: 1.1em;
+        }
+
+        section {
+            width: 80%;
+            margin: 10px auto;
+        }
+
+        h1 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 900i;
+            font-size: 2.8em;
+            font-style: italic;
+            /* The em unit. 3x the current size */
+            letter-spacing: .01em;
+            margin: 0 0 15px 0;
+            /* text-transform: uppercase; */
+        }
+
+        h2 {
+            font-family: 'Lato', sans-serif;
+            font-weight: 300;
+            color: #63666a;
+            font-size: 1.5em;
+            letter-spacing: .06em;
+            font-style: italic;
+            margin: 0 0 25px 0;
+        }
+
+        p {
+            font-size: 1.15em;
+            line-height: 1.8em;
+            margin: 0 0 25px 0;
+        }
+
+        a {
+            color: #15397f;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            padding: 0px 20px 4px 20px;
+            /* font-size: 0.96em; */
+            line-height: 1.6em;
+            color: #63666a;
+        }
+
+        li {
+            margin: 10px 0
+        }
+
+        #map {
+            width: 100%;
+            margin: 0px auto;
+
+        }
+
+        .max-image-width {
+            width: 100%;
+        }
+
+        /* add custom style class here */
+
+        .linkbox {
+            margin: 3px 0 20px 0;
+            display: block;
+            font-weight: 300;
+        }
+
+        hr {
+            border: 0px;
+            border-bottom: 1px solid #3d3d3d;
+            padding-top: 20px;
+        }
+
+        /* Use float property to make two-column layout */
+
+        .first-column {
+            float: left;
+            width: 48%;
+            padding-right: 20px;
+        }
+
+        .column {
+            float: left;
+            width: 48%;
+        }
+
+        /* Clear floats after the columns */
+
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .svg-title {
+            float: left;
+            display: inline-block;
+            width: 65px;
+            margin: -8px 10px -8px 0;
+        }
+
+        /* When browser is 800px wide or less */
+
+        @media screen and (max-width: 800px) {
+
+            .first-column,
+            .column {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <iframe src="map.html" width="100%" height="440px"></iframe>
+        <a href='map.html' class="linkbox">Full-screen version</a>
+
+    <section>
+        
+        <img src="ravanello_architetto_fra_01.svg" class="svg-title">
+        <h1>Urban Agriculture in Washington, DC</h1>
+        <h2>MAP671 - Final Project. Chels-Map, Dec. 2020</h2>
+    
+        <div class="row">
+            <div class="first-column">
+                <p>
+                    Farming in cities often has a non-profit, humanitarian focus that provides solutions for the issues of food insecurity and malnutrition. 
+                    Conversely, urban agriculture may be an enterprising business model, looking to make a living within the horticulture profession. In this map, 
+                    urban agriculture sites often have a commercial focus, and differ from community garden spaces in that they are not for public use. 
+                    Community gardens in DC are inteded for use by the public, and are organized via 1. DC Department of Parks and Recreation (DPR); 
+                    2. National Parks Service (NPS); or 3. independent organizations.
+                    School garden data is self-reported and collected annually by the Office of the State Superintendent of Education (OSSE) as part of the 
+                    School Health Profiles created under the Healthy School Act. 
+                </p>
+
+                <h3>Data used in this project</h3>
+                <ul>
+                    <li>Points and polygons in this map are provided by the Washington, DC District Department of Transportation, Urban Forestry Division. Hyperlinks to data source is as follows:</li>
+                    <li><a href="https://urban-forestry-dcgis.opendata.arcgis.com/datasets/urban-agriculture-areas-polygons">Urban Agriculture Polygons</a>.</li>
+                    <li><a href="https://urban-forestry-dcgis.opendata.arcgis.com/datasets/community-gardens-polygons">Community Garden Polygons</a>.</li>
+                    <li><a href="https://urban-forestry-dcgis.opendata.arcgis.com/datasets/school-gardens">School Garden Points</a>.</li>
+                    <li>The DC administrative boundary layers used for downloaded bus stop points from OpenStreetMap is from <a href="https://www.census.gov/geographies/mapping-files/time-series/geo/carto-boundary-file.html">the US Census Bureau</a>.</li>
+                    <li>Custom svg icons are from <a href="https://freesvg.org/icons">FreeSVG.com</a>.</li>
+                    <li>Additional layers come from MapBox default tilesets, with the new style created based off of the Basic style "Spring."</li>
+
+                </ul>
+
+                <h3>Tools used in this project</h3>
+                <ul>
+                    <li>Layers were downloaded and inspected using QGIS 3.14, with shapefiles then uploaded onto MapBox Studio.</li>
+                    <li>QGIS 3.14 was also used to create the bus stops points layer, via clipping OpenStreetMap points data which overlapped with the DC boundary layer.</li>
+                    <li>Data is shown on Mapbox web map.</li>
+                </ul>
+
+                <h3>Project Assets</h3>
+                <ul>
+                    <li><a href="bus_stops_DC.geojson" download>This geojson</a> of bus stop points in the District of Columbia.</li>
+                </ul>
+
+            </div>
+
+            <div class="column">
+                <p>Legend</p>
+                <p>School Gardens <img src="tomato.svg" class="svg-title"></p> <br>
+                <p>Urban Farms <img src="broccoli.svg" class="svg-title"></p> <br>
+                <p>Community Gardens <img src="cornns.svg" class="svg-title"></p> <br>
+                
+                <img class="max-image-width" src="../images/DC Urban Greens.JPG"
+                    title="DC Urban Greens Veggies">
+                <div class="linkbox">Veggies from DC Urban Greens, a farm in DC which seeks to "Feed Bodies, Nourish Minds, 
+                    Grow Communities" <a href = "https://www.dcurbangreens.org/feeding-bodies">Link: DC Urban Greens website</a> </div>
+            
+            </div>
+        </div>
+
+
+        <hr>
+        <li>See my projects on GitHub <a href="https://github.com/chels-map">Chels-Map</a></li>
+        <li>Check me out on <a href="https://www.linkedin.com/in/maupin/">LinkedIn</a></li>
+
+    </section>
+</body>
+</html>
