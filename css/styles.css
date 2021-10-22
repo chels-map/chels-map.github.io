@@ -36,3 +36,23 @@ a {
   object-fit: cover;
   height: calc(50px + 20vw);
 }
+
+.boss-image {
+  background-image: url('../images/arugula.jpg'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-position: center center;
+}
+
+header h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* Consider adding drop shadows on header titles */
+header h1, header h2 {
+  text-shadow: 0 0 2px #212529, 0 0 4px #212529;
+}
