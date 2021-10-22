@@ -31,3 +31,8 @@ section {
 a {
   color: rgb(1, 11, 150);
 }
+
+.fit-image {
+  object-fit: cover;
+  height: calc(50px + 20vw);
+}
