@@ -9,14 +9,15 @@ body {
 }
 
 header {
-  padding: 154px 0 100px;
+  padding: 100px 0 120px;
+  background-color: rgb(138, 138, 138)
 }
 
 /* media query when the media is wider than 992px */
 @media (min-width: 992px) {
   header {
     padding: 156px 0 100px;
-    background-color: #83abe0;
+    /* background-color: #83abe0; */
   }
 }
 
@@ -42,11 +43,19 @@ a {
   background-repeat: no-repeat; 
   background-size: cover; 
   background-position: center center;
+  background-blend-mode: multiply;
 }
 
 header h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+header h2 {
+  font-size: 2rem;
   color: #fff;
   text-align: center;
   margin-bottom: 0;
