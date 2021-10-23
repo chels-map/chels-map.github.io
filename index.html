@@ -69,15 +69,16 @@
     </nav>
 
     <!-- Welcome Section -->
-    <header class="text-white">
-      <div class="container text-center">
+    <header class="text-white boss-image">
+      <div class="container text-center pb-4">
         <h1>Food and Farming Systems</h1>
-        <p class="lead">
+        <h2>Food, farms and the environment.</h2>
+        <!-- <p class="lead">
           Food, farms and the environment. <br> 
           Maps by Chels-Map <br>
           using <a href="https://getbootstrap.com/">Bootstrap</a> and several starter templates from
           <a href="https://startbootstrap.com/">Start Bootstrap</a>
-        </p>
+        </p> -->
       </div>
     </header>
 
@@ -85,11 +86,11 @@
     <section id="projects" class="bg-dark">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="col-lg-4 portfolio-item">
             <div class="card h-100">
-              <a href="#"
+              <a href="#" data-bs-toggle="modal" data-bs-target="#proj1"
                 ><img
-                  class="card-img-top"
+                  class="card-img-top fit-image"
                   src="images/breweries_1200px.png"
                   alt="Breweries of North America"
               /></a>
@@ -106,11 +107,30 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
+          <!-- Modal for above card. -->
+        <div class="modal fade" id="proj1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class="modal-title" id="exampleModalLabel">Booy Brews project</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <img src="maps/breweries_8000px.png" class="mw-100" alt="Preview of map.">
+                <h5>Visit <a href="#">map</a></h5>
+              </div>
+              <!-- <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div> -->
+            </div>
+          </div>
+        </div>
+          
+          <div class="col-lg-4 portfolio-item">
             <div class="card h-80">
               <a href="#"
                 ><img
-                  class="card-img-top"
+                  class="card-img-top fit-image"
                   src="images/ky_photoperiod_thumbnail.PNG"
                   alt=""
               /></a>
@@ -125,11 +145,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6 portfolio-item">
+          <div class="col-lg-4 portfolio-item">
             <div class="card h-100">
               <a href="#"
                 ><img
-                  class="card-img-top"
+                  class="card-img-top fit-image"
                   src="images/urban_ag_dc_thumbnail.png"
                   alt="Farms in Metro D.C."
               /></a>
@@ -143,12 +163,13 @@
               </div>
             </div>
           </div>
-          <div class="row justify-content-md-center">
-            <div class="col-lg-4 col-sm-6 portfolio-item">
+          </div>
+          <div class="row">
+            <div class="col-lg-4 portfolio-item">
               <div class="card h-100">
                 <a href="#"
                   ><img
-                    class="card-img-top"
+                    class="card-img-top fit-image"
                     src="images/Indiana_Waterways_1200px.png"
                     alt="Waterways of Indiana"
                 /></a>
@@ -166,7 +187,6 @@
               </div>
             </div>
           </div>
-        </div>
       </div>
     </section>
 
