@@ -33,11 +33,16 @@ a {
   color: rgb(1, 11, 150);
 }
 
+/*This makes image cards the same size/height depending on the browser viewport width
+Doesn't change aspect ratio of the original image
+the object-fit propert says that, whatever the size, the image will cover the available space
+The initial height is 50 pixels, but then take 20% of the viewport size and add to that*/
 .fit-image {
   object-fit: cover;
   height: calc(50px + 20vw);
 }
 
+/*The Blend Mode is over whatever the background color is*/
 .boss-image {
   background-image: url('../images/arugula.jpg'); 
   background-repeat: no-repeat; 
@@ -63,5 +68,5 @@ header h2 {
 
 /* Consider adding drop shadows on header titles */
 header h1, header h2 {
-  text-shadow: 0 0 2px #212529, 0 0 4px #212529;
+  text-shadow: 0 0 2px #212529, 0 0 4px #848688;
 }
